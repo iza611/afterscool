@@ -25,7 +25,7 @@ function App() {
         let div = document.getElementById('messages');
         let last_index = states.messages.length - 1;
         let msg = states.messages[last_index];
-        div.innerHTML += `<p><b>${msg.author}:</b> ${msg.data}</p>`
+        div.innerHTML += `<p><b>${msg.author}:</b> ${msg.data}</p>`;
     }
 
     return (
