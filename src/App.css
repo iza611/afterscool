@@ -1,3 +1,52 @@
+:root {
+  --error-color: #d8000c;
+  --send-btn-shadow-posX: 4px;
+  --send-btn-shadow-posY: 5px;
+  --palette1: #fff;
+  --palette2: #ecf2fe;
+  --palette3: #bfd2f7;
+  --palette4: #94b0e9;
+  --palette5: #6b8dd2;
+}
+/* #6b8dd2 #94b0e9 #bfd2f7 #ecf2fe #ffffff */
+
+body {
+  background-color: var(--palette2);
+  color: var(--palette5);
+}
+
+#send_btn {
+  background-color: var(--palette3);
+  color: var(--palette1);
+  font-size: 5vh;
+  padding: 10px;
+
+  border: none;
+  border-radius: 3px;
+  box-shadow: var(--send-btn-shadow-posX) var(--send-btn-shadow-posY) var(--palette5);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#send_btn:hover {
+  background-color: var(--palette4);
+}
+#send_btn:active {
+  box-shadow: 0 0;
+  color: #bfd2f7;
+  transform: translate(calc(-50% + var(--send-btn-shadow-posX)), calc(-50% + var(--send-btn-shadow-posY)));
+}
+
+#message {
+  text-align: center;
+  font-size: 4vh;
+  margin: 0;
+  padding: 10px;
+}
+
 .App-link {
   color: #61dafb;
 }
+
